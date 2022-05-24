@@ -5,7 +5,7 @@ from env import TOKEN
 class Bot(commands.Bot):
 
     def __init__(self):
-        super().__init__(token=TOKEN, prefix='!', initial_channels=['Travinksy','Tayyday'])
+        super().__init__(token=TOKEN, prefix='!', initial_channels=['Travinksy','tayyday'])
 
     async def event_ready(self):
         print(f'Logged in as | {self.nick}')

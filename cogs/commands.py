@@ -2,6 +2,7 @@ from secrets import choice
 from twitchio.ext import commands
 from cogs.art import crourb, catjam, bbpepe, hank, activate, randy
 from random import choice
+import requests
 
 class MyCog(commands.Cog):
 
@@ -27,6 +28,21 @@ class MyCog(commands.Cog):
         else:
             honked = f'{person} was just permanently banned for {choice(randy)}'
             await ctx.send(honked)
+
+    @commands.command(name="poke")
+    async def poke(self, ctx):
+        # -*- coding: utf-8 -*-
+        import random as r
+        f = [i for i in range(895) if i !=0]
+        x = r.choice(f)
+        url = f'https://pokeapi.co/api/v2/pokemon/{x}'
+        response = requests.get(url)
+        poke = response.json()
+        name = poke["name"]
+        icon = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{x}.png'
+        link = f'https://www.google.com/search?tbm=isch&as_q=rule+34+{name}+pokemon'
+        await ctx.send(f"{name}\n{icon}")
+
 
 
     @commands.command(name='crourb')
