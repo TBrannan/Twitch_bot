@@ -1,12 +1,11 @@
 from twitchio.ext import commands
-from pathlib import Path
-import os
+from env import TOKEN
 
 
 class Bot(commands.Bot):
 
     def __init__(self):
-        super().__init__(token=os.environ['TOKEN'], prefix='!', initial_channels=['Travinksy','Tayyday'])
+        super().__init__(token=TOKEN, prefix='!', initial_channels=['Travinksy','Tayyday'])
 
     async def event_ready(self):
         print(f'Logged in as | {self.nick}')
