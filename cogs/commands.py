@@ -1,6 +1,6 @@
 from secrets import choice
 from twitchio.ext import commands
-from cogs.art import crourb, catjam, bbpepe, hank, activate, randy
+from cogs.art import crourb, catjam, bbpepe, hank, activate, randy, died
 from random import choice
 import requests
 
@@ -43,7 +43,9 @@ class MyCog(commands.Cog):
         link = f'https://www.google.com/search?tbm=isch&as_q=rule+34+{name}+pokemon'
         await ctx.send(f"{name}\n{icon}")
 
-
+    @commands.command(name='death+')
+    async def death(self, ctx):
+            await ctx.send(died)
 
     @commands.command(name='crourb')
     async def crourb(self, ctx):
