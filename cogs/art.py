@@ -28,4 +28,4 @@ reason12 = 'I mean, just look at what you\'ve done'
 randy = [reason1,reason2,reason3,reason4,reason5,reason6,reason7,reason8,reason9,reason10,reason11,reason12]
 
 
-died = """Well played, Taylor! You fought valiantly, but alas it was the opponent who was superior this time."""
+died = """Well played, Taylor! You fought valiantly, but alas it was the opponent who was superior this time. tayydaFocus """
