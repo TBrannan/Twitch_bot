@@ -1,6 +1,6 @@
 from secrets import choice
 from twitchio.ext import commands
-import art
+import cogs.art as art
 from random import choice
 import requests
 
