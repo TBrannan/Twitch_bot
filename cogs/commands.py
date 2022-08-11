@@ -1,6 +1,6 @@
 from secrets import choice
 from twitchio.ext import commands
-from cogs.art import crourb, catjam, bbpepe, hank, activate, randy, died
+import art
 from random import choice
 import requests
 
@@ -45,27 +45,43 @@ class MyCog(commands.Cog):
 
     @commands.command(name='death+')
     async def death(self, ctx):
-            await ctx.send(died)
+            await ctx.send(art.died)
 
     @commands.command(name='crourb')
     async def crourb(self, ctx):
-            await ctx.send(crourb)
+            await ctx.send(art.crourb)
 
     @commands.command(name='catjam')
     async def catjam(self, ctx):
-        await ctx.send(catjam)
+        await ctx.send(art.catjam)
 
     @commands.command(name='bbpepe')
     async def bbpepe(self, ctx):
-        await ctx.send(bbpepe)
+        await ctx.send(art.bbpepe)
+
+    @commands.command(name='booba')
+    async def bbpepe(self, ctx):
+        await ctx.send(art.booba)
 
     @commands.command(name='hank')
     async def hank(self, ctx):
-        await ctx.send(hank)
+        await ctx.send(art.hank)
 
     @commands.command(name='activate')
     async def activate(self, ctx):
-        await ctx.send(activate)
+        await ctx.send(art.activate)
+
+    @commands.command(name='duck')
+    async def activate(self, ctx):
+        await ctx.send(art.duck)
+
+    @commands.command(name='mboob')
+    async def activate(self, ctx):
+        await ctx.send(art.mboob)
+
+    @commands.command(name='mboob')
+    async def activate(self, ctx):
+        await ctx.send(art.mboob)
 
     @commands.command()
     async def hello(self, ctx: commands.Context):
