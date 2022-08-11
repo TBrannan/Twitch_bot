@@ -75,13 +75,9 @@ class MyCog(commands.Cog):
     async def activate(self, ctx):
         await ctx.send(art.duck)
 
-    @commands.command(name='mboob')
+    @commands.command(name='fish')
     async def activate(self, ctx):
-        await ctx.send(art.mboob)
-
-    @commands.command(name='mboob')
-    async def activate(self, ctx):
-        await ctx.send(art.mboob)
+        await ctx.send(art.fish)
 
     @commands.command()
     async def hello(self, ctx: commands.Context):
