@@ -60,7 +60,7 @@ class MyCog(commands.Cog):
         await ctx.send(art.bbpepe)
 
     @commands.command(name='booba')
-    async def bbpepe(self, ctx):
+    async def booba(self, ctx):
         await ctx.send(art.booba)
 
     @commands.command(name='hank')
@@ -71,13 +71,17 @@ class MyCog(commands.Cog):
     async def activate(self, ctx):
         await ctx.send(art.activate)
 
+    @commands.command(name='fish')
+    async def fish(self, ctx):
+        await ctx.send(art.fish)
+
     @commands.command(name='duck')
-    async def activate(self, ctx):
+    async def duck(self, ctx):
         await ctx.send(art.duck)
 
-    @commands.command(name='fish')
-    async def activate(self, ctx):
-        await ctx.send(art.fish)
+    @commands.command(name='mboob')
+    async def mboob(self, ctx):
+        await ctx.send(art.mboob)
 
     @commands.command()
     async def hello(self, ctx: commands.Context):
