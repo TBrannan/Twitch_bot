@@ -26,7 +26,7 @@ class MyCog(commands.Cog):
             honked = f'{person} was just permanently banned for {x}'
             await ctx.send(honked)
         else:
-            honked = f'{person} was just permanently banned for {choice(randy)}'
+            honked = f'{person} was just permanently banned for {choice(art.randy)}'
             await ctx.send(honked)
 
     @commands.command(name="poke")
