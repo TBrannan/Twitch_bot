@@ -87,6 +87,10 @@ class MyCog(commands.Cog):
     async def goose(self, ctx):
         await ctx.send(art.goose)
 
+    @commands.command(name='brew')
+    async def brew(self, ctx):
+        await ctx.send(art.brew)
+
     @commands.command()
     async def hello(self, ctx: commands.Context):
         await ctx.send(f'Hello {ctx.author.name}!')
