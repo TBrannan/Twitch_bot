@@ -91,6 +91,10 @@ class MyCog(commands.Cog):
     async def brew(self, ctx):
         await ctx.send(art.brew)
 
+    @commands.command(name='bus')
+    async def bus(self, ctx):
+        await ctx.send(art.bus)
+
     @commands.command()
     async def hello(self, ctx: commands.Context):
         await ctx.send(f'Hello {ctx.author.name}!')
