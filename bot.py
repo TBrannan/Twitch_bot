@@ -2,7 +2,6 @@ from twitchio.ext import commands
 from env import TOKEN
 import cogs.art
 
-
 class Bot(commands.Bot):
 
     def __init__(self):

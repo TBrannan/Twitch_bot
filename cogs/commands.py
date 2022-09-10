@@ -99,6 +99,10 @@ class MyCog(commands.Cog):
     async def raid(self, ctx):
         await ctx.send(art.raid)
 
+    @commands.command(name='yoshi')
+    async def yoshi(self, ctx):
+        await ctx.send(art.raid)
+
     @commands.command()
     async def hello(self, ctx: commands.Context):
         await ctx.send(f'Hello {ctx.author.name}!')
